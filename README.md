@@ -1,6 +1,6 @@
 ## *__Quick Access__*
-* [No_Auth_Header](https://impulseai.github.io/API-Error-Codes/#No_Auth_Header)
-* [Bad_Authentication](https://impulseai.github.io/API-Error-Codes/#Bad_Authentication)
+* [No_Auth_Header](#no_auth_header)
+* [Bad_Authentication](#bad_authentication)
 
 ---
 
@@ -13,3 +13,6 @@ url = "<<YOUR-API-END-POINT>>"
 response = requests.get(url, headers=headers).json()
 print(response)
 ```
+
+### Bad_Authentication
+Provided API Key Is Wrong Check It Again Then Try.

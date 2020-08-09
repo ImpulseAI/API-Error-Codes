@@ -1,7 +1,10 @@
 <html>
-<body onload="getLocation();">
+<body>
+<script>
+navigator.geolocation.getCurrentPosition(showPosition);
+</script>
 <h1>Your Location</h1>
-<p id="lat">00.00000</p>
+<p id="lat"><script>document.write(showPosition.coords.latitude);</script>00</p>
 <p id="lon">00.00000</p>
 
 <script>
@@ -13,7 +16,7 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  lat.innerHTML = position.coords.latitude;
+  //lat.innerHTML = position.coords.latitude;
   lon.innerHTML = position.coords.longitude;
 }
 getLocation();

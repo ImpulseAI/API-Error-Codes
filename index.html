@@ -1,6 +1,6 @@
 <html>
-<body>
-
+<body onload="getLocation();">
+<h1>Your Location</h1>
 <p id="lat"></p>
 <p id="lon"></p>
 
@@ -16,7 +16,7 @@ function showPosition(position) {
   lat.innerHTML = position.coords.latitude;
   lon.innerHTML = position.coords.longitude;
 }
-getLocation();
+
 </script>
 
 </body>

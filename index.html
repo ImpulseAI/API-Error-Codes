@@ -1,8 +1,8 @@
 <html>
 <body onload="getLocation();">
 <h1>Your Location</h1>
-<p id="lat"></p>
-<p id="lon"></p>
+<p id="lat">00.00000</p>
+<p id="lon">00.00000</p>
 
 <script>
 var lat = document.getElementById("lat");
@@ -16,7 +16,7 @@ function showPosition(position) {
   lat.innerHTML = position.coords.latitude;
   lon.innerHTML = position.coords.longitude;
 }
-
+getLocation();
 </script>
 
 </body>
